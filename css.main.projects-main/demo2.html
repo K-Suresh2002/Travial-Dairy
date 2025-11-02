@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Animation Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+      padding: 100px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .spacer {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p>Scroll down to see animations</p>
+  </header>
+
+  <div class="spacer"></div> <!-- adds scroll space -->
+
+  <!--<section>
+    <h2>Section One</h2>
+    <p>This section appears with an animation as you scroll.</p>
+  </section>
+
+  <div class="spacer"></div>
+
+  <section>
+    <h2>Section Two</h2>
+    <p>Another animated section triggered on scroll.</p>
+  </section>
+
+  <div class="spacer"></div>
+
+  <section>
+    <h2>Final Section</h2>
+    <p>All content is animated into view as you reach it.</p>
+  </section>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            width: 100vw;
+            height: 50vh;
+            background-color: red;
+            margin: 200px;
+            opacity: 0;
+            transform:translateY(100px)
+            
+        }
+        .red.visible{
+
+        }
+        .black{
+            background-color: black;
+
+        }
+        .blue{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    
+    <div class=" red black"></div>
+    <div class="red blue"></div>
+</body>
+</html>
